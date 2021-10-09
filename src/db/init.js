@@ -1,27 +1,29 @@
-const Database = require("./config")
+const Database = require("./config.js")
 
 const initDb = {
-    async init() {
+    async init(){
         const db = await Database()
-
-        await db.exec(`CREATE TABLE usuario (
+        
+        await db.exec(`
+            CREATE TABLE usuario (
                 id      INTEGER PRIMARY KEY AUTOINCREMENT,
                 email   TEXT,
                 nome    TEXT,
                 senha   TEXT
             )`);
             
-        await db.exec(`CREATE TABLE registro (
+        await db.exec(`
+            CREATE TABLE registro (
                 id          INTEGER PRIMARY KEY AUTOINCREMENT,
-                data        TEXT,
+                data_criacao TEXT,
                 valor       INTEGER,
                 descricao   TEXT,
                 usuario     INTEGER, 
-                pai         INTEGER,
-                FOREIGN KEY (usuario) REFERENCES usuario (id)
+                pai         INTEGER
             )`);
-
-        await db.close()
+   
+        await db.close();
     }
 }
-initDb.init()
+
+initDb.init();

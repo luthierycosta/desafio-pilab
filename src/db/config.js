@@ -3,7 +3,7 @@ const { open } = require("sqlite");
 
 module.exports = () =>
     open({
-        filename: '/src/db/pilab.sqlite',
-        driver: sqlite3.Database
+        filename: './src/db/pilab.sqlite',
+        driver: sqlite3.Database,
     });
     
