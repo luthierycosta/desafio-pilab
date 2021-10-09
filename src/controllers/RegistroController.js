@@ -20,7 +20,6 @@ module.exports = {
         const db = await Database()
 
         const tipo_saldo = req.params.tipo_saldo == 'entrada' ? 1 : 2
-
         const data = req.body.data
         const valor = req.body.valor
         const descricao = req.body.descricao
@@ -40,7 +39,7 @@ module.exports = {
         `)
 
         await db.close()
-        res.redirect("/")
+        res.redirect("/balanco/teste")
     }
         
 }

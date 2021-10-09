@@ -55,8 +55,12 @@ table td:nth-child(2) {
     font-weight: 600;
 }
 
-table td:nth-child(3) {
+table td.entrada {
     color: var(--green);
+}
+
+table td.saida {
+    color: var(--red);
 }
 
 

@@ -35,8 +35,22 @@ module.exports = {
         res.redirect(`/balanco/${nome.replace(' ','_')}`)
     },
 
-    open(req, res) {
+    async open(req, res) {
+        const db = await Database()
+
         const name = req.params.user_id
-        res.render("balanco", {username: name})
+
+        const registros = await db.all(`SELECT * FROM registro ORDER BY data_criacao`)
+
+        const registros_ativos = await db.all(`SELECT SUM(valor) FROM registro WHERE tipo_saldo = 1`)
+        const registros_passivos = await db.all(`SELECT SUM(valor) FROM registro WHERE tipo_saldo = 2`)
+
+        const saldo = registros_ativos[0]['SUM(valor)'] - registros_passivos[0]['SUM(valor)']
+
+        console.log(saldo)
+            
+
+
+        res.render("balanco", {username: name, registros: registros, saldo: saldo})
     }
 }
