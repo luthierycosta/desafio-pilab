@@ -16,6 +16,10 @@ main {
     margin-bottom: 1rem;
 }
 
+#user_id {
+    visibility: hidden;
+}
+
 #balanco header .button {
     width: 4rem;
     justify-content: right;

@@ -2,6 +2,7 @@
     <head>
         <title> MeuBalanço - Registros</title>
         <meta charset="UTF-8">
+
         <!-- view port -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Importa CSS -->
@@ -22,9 +23,9 @@
     <body>
         <div id="balanco" class="content">
             <header>
-                <div class="welcome">
-                    Olá, fulano
+                <div class="welcome" id="username">
                 </div>
+                <div id="user_id">2323</div>
                 <div class="button">
                     <a href="home.html"> <img src="images/voltar.png" title="Voltar à home"></img></a>
                 </div>
@@ -75,10 +76,18 @@
             <div class="modal">
                 <div>
                     <h2>Nova entrada</h2>
-                    <form action=""> 
-                        <input type="date" id="data" placeholder="Data">
-                        <input type="number" id="valor" placeholder="Valor">
-                        <input type="text" id="descricao" placeholder="Descrição">
+                    <form action="#" method="POST"> 
+                        <input type="date" id="data" name="data" placeholder="Data">
+                        <input type="number" id="valor" name="valor" placeholder="Valor">
+                        <input type="text" id="descricao" name="descricao" placeholder="Descrição">
+                        <input list="pai" name="pai" placeholder="Escolha o registro pai deste registro"></select>
+                        <datalist id="pai">
+                            <option value='1'></option>
+                            <option value='2'></option>
+                            <option value='3'></option>
+                            <option value='7'></option>
+                        </datalist>
+    
                         <button> Salvar entrada</button>
                         <a class="button outlined action-cancel entrada">
                             Cancelar
@@ -92,10 +101,18 @@
             <div class="modal">
                 <div>
                     <h2>Nova saída</h2>
-                    <form action=""> 
-                        <input type="date" id="data" placeholder="Data">
-                        <input type="number" id="valor" placeholder="Valor">
-                        <input type="text" id="descricao" placeholder="Descrição">
+                    <form action="#" method="POST"> 
+                        <input type="date" id="data" name="data" placeholder="Data">
+                        <input type="number" id="valor" name="valor" placeholder="Valor">
+                        <input type="text" id="descricao" name="descricao" placeholder="Descrição">
+                        <input list="pai" name="pai" placeholder="Escolha o registro pai deste registro"></select>
+                        <datalist id="pai">
+                            <option value='1'></option>
+                            <option value='2'></option>
+                            <option value='3'></option>
+                            <option value='7'></option>
+                        </datalist>
+                        
                         <button> Salvar saída</button>
                         <a class="button outlined action-cancel saida">
                             Cancelar

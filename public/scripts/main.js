@@ -1,6 +1,18 @@
 import Modal from './modal.js'
 
+// Recupera nome do usuário na tela do balanço
+document.querySelector('#username').innerHTML = 'Olá, fulano'
+
 const modal = Modal()
+
+// Evento de cadastrar uma nova entrada
+const form_entrada = document.querySelector('.modal-wrapper#entrada form')
+form_entrada.setAttribute('action', `/balanco/entrada/`)
+
+// Evento de cadastrar uma nova saída
+const form_saida = document.querySelector('.modal-wrapper#saida form')
+form_saida.setAttribute('action', `/balanco/saida/`)
+
 
 const open_buttons = document.querySelectorAll('.button.action-open')
 const cancel_buttons = document.querySelectorAll('.button.action-cancel')
