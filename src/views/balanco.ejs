@@ -13,6 +13,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Ruluko&display=swap" rel="stylesheet">
+        
+        <!-- Scripts -->
+        <script src="scripts/main.js" defer type="module"></script>
+    
     </head>
 
     <body>
@@ -48,11 +52,11 @@
                 </div>
                 <div class="buttons">
                     <div>
-                    <a class="button">
+                    <a class="button action-open entrada">
                         <img src="images/icone-mais.png">
                         Nova entrada
                     </a>
-                    <a class="button">
+                    <a class="button action-open saida">
                         <img src="images/icone-menos.png">
                         Nova saída
                     </a>
@@ -67,8 +71,8 @@
 
         <!-- ----- MODAIS -------- -->
 
-        <div class="modal-wrapper active">
-            <div class="modal" id="entrada">
+        <div class="modal-wrapper" id="entrada">
+            <div class="modal">
                 <div>
                     <h2>Nova entrada</h2>
                     <form action=""> 
@@ -76,13 +80,16 @@
                         <input type="number" id="valor" placeholder="Valor">
                         <input type="text" id="descricao" placeholder="Descrição">
                         <button> Salvar entrada</button>
+                        <a class="button outlined action-cancel entrada">
+                            Cancelar
+                        </a>
                     </form> 
                 </div>
             </div>
         </div>
 
-        <div class="modal-wrapper">
-            <div class="modal" id="saida">
+        <div class="modal-wrapper" id="saida">
+            <div class="modal">
                 <div>
                     <h2>Nova saída</h2>
                     <form action=""> 
@@ -90,6 +97,9 @@
                         <input type="number" id="valor" placeholder="Valor">
                         <input type="text" id="descricao" placeholder="Descrição">
                         <button> Salvar saída</button>
+                        <a class="button outlined action-cancel saida">
+                            Cancelar
+                        </a>
                     </form> 
                 </div>             
             </div>
