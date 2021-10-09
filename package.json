@@ -1,0 +1,17 @@
+{
+  "name": "desafio-pilab",
+  "version": "1.0.0",
+  "description": "Desafio para vaga na bolsa de pesquisa FACE-Pilab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "Luthiery Costa",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

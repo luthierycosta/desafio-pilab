@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <head>
+        <title> MeuBalanço - Registros</title>
+        <meta charset="UTF-8">
+        <!-- view port -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Importa CSS -->
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="stylesheet" href="styles/balanco.css">
+        <link rel="stylesheet" href="styles/modal.css">
+
+        <!-- Importa fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Ruluko&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="balanco" class="content">
+            <header>
+                <div class="welcome">
+                    Olá, fulano
+                </div>
+                <div class="button">
+                    <a href="home.html"> <img src="assets/voltar.png" title="Voltar à home"></img></a>
+                </div>
+            </header>
+        
+            <main>
+                <div class="registros">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>26/02</td>
+                                <td>Almoço mãe</td>
+                                <td>25.00</td>
+                            </tr>
+                            <tr>
+                                <td>08/10</td>
+                                <td>fan Cooler Master Sickleflow</td>
+                                <td>42.90</td>
+                            </tr>
+                        </tbody>
+                       
+
+                    </table>
+    
+                </div>
+                <div class="buttons">
+                    <div>
+                    <a class="button">
+                        <img src="assets/icone-mais.png">
+                        Nova entrada
+                    </a>
+                    <a class="button">
+                        <img src="assets/icone-menos.png">
+                        Nova saída
+                    </a>
+    
+                </div>
+                
+            </main>
+            
+           
+        
+        </div>
+
+        <!-- MODAL -->
+        <div class="modal-wrapper">
+            <div class="modal" id="entrada">
+                <div>
+                    <h2>Nova entrada</h2>
+                    <form action=""> 
+                        <input type="date" id="data" placeholder="Data">
+                        <input type="number" id="valor" placeholder="Valor">
+                        <input type="text" id="descricao" placeholder="Descrição">
+                        <button> Salvar entrada</button>
+                    </form> 
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-wrapper">
+            <div class="modal" id="saida">
+                <div>
+                    <h2>Nova saída</h2>
+                    <form action=""> 
+                        <input type="date" id="data" placeholder="Data">
+                        <input type="number" id="valor" placeholder="Valor">
+                        <input type="text" id="descricao" placeholder="Descrição">
+                        <button> Salvar saída</button>
+                    </form> 
+                </div>
+                
+            </div>
+        </div>
+
+        
+    </body>
+
+    
+</html>

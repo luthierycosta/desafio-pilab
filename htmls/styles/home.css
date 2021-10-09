@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main h2 {
+    font-size: 3.5rem;
+    margin: 3rem;
+}
+
+input, button, .button {
+    width: 100%;
+    line-height: 0;
+    align-items: center;
+}
+
+.separator {
+    height: 50px;
+}

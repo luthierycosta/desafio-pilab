@@ -1,0 +1,60 @@
+.content {
+    width: 50%;
+}
+
+main {
+    display: block;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#balanco header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#balanco header .button {
+    width: 4rem;
+    justify-content: right;
+}
+
+.welcome {
+    width: 70%;
+    color: var(--white);
+}
+
+
+.buttons {
+    display: flex;
+}
+
+.button {
+    width: 100%;
+    align-items: center;
+}
+ 
+.registros {
+    height: 300px;
+    background: var(--white);
+    margin-bottom: 3rem;
+}
+
+table {
+    width: 100%;
+}
+
+
+table td:nth-child(2) {
+    font-weight: 600;
+}
+
+table td:nth-child(3) {
+    color: var(--green);
+}
+
+
+
+
