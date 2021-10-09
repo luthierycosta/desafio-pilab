@@ -29,6 +29,12 @@ module.exports = {
         }
     },
 
+    async login(req, res) {
+        /* Login sem verificação de cadastro */
+        const nome = req.body.nome
+        res.redirect(`/balanco/${nome.replace(' ','_')}`)
+    },
+
     open(req, res) {
         const name = req.params.user_id
         res.render("balanco", {username: name})

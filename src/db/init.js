@@ -18,8 +18,7 @@ const initDb = {
                 data_criacao TEXT,
                 valor       INTEGER,
                 descricao   TEXT,
-                usuario     INTEGER, 
-                pai         INTEGER
+                tipo_saldo  INTEGER
             )`);
    
         await db.close();

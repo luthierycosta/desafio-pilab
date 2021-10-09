@@ -77,17 +77,10 @@
             <div class="modal">
                 <div>
                     <h2>Nova entrada</h2>
-                    <form action="#" method="POST"> 
+                    <form action="/novo_registro/<%= username %>/entrada/" method="POST"> 
                         <input type="date" id="data" name="data" placeholder="Data">
                         <input type="number" id="valor" name="valor" placeholder="Valor">
                         <input type="text" id="descricao" name="descricao" placeholder="Descrição">
-                        <input list="pai" name="pai" placeholder="Escolha o registro pai deste registro"></select>
-                        <datalist id="pai">
-                            <option value='1'></option>
-                            <option value='2'></option>
-                            <option value='3'></option>
-                            <option value='7'></option>
-                        </datalist>
     
                         <button> Salvar entrada</button>
                         <a class="button outlined action-cancel entrada">
@@ -102,17 +95,10 @@
             <div class="modal">
                 <div>
                     <h2>Nova saída</h2>
-                    <form action="#" method="POST"> 
+                    <form action="/novo_registro/<%= username %>/saida/" method="POST"> 
                         <input type="date" id="data" name="data" placeholder="Data">
                         <input type="number" id="valor" name="valor" placeholder="Valor">
                         <input type="text" id="descricao" name="descricao" placeholder="Descrição">
-                        <input list="pai" name="pai" placeholder="Escolha o registro pai deste registro"></select>
-                        <datalist id="pai">
-                            <option value='1'></option>
-                            <option value='2'></option>
-                            <option value='3'></option>
-                            <option value='7'></option>
-                        </datalist>
                         
                         <button> Salvar saída</button>
                         <a class="button outlined action-cancel saida">
