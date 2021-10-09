@@ -1,8 +1,5 @@
 import Modal from './modal.js'
 
-// Recupera nome do usuário na tela do balanço
-document.querySelector('#username').innerHTML = 'Olá, fulano'
-
 const modal = Modal()
 
 // Evento de cadastrar uma nova entrada
